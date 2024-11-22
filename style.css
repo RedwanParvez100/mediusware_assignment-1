@@ -15,6 +15,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 13px;
+}
+
+.header {
+    margin-top: 13px;
 }
 
 .nav {
@@ -23,19 +28,21 @@
 
 .footer {
     background: #eaecf0;
+    margin-top: 13px;
 }
 
 .middleBody {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 13px;
 }
 
 .leftSide,
 .rightSide {
     column-span: 1/2;
-    height: 600px;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
+    gap: 13px;
 }
 
 .section,
@@ -63,7 +70,7 @@
     background: #fce7f6;
 }
 
-.aside {
+.rightSide {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,65 +100,48 @@
     font-size: 1.1rem;
 }
 
+.achievements-section {
+    background-color: #f0f8ff;
+    padding: 60px 20px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.achievements-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.achievements-title span {
+    color: #40e0d0;
+}
+
+.achievements-subtitle {
+    max-width: 800px;
+    margin: 0 auto 50px;
+    color: #666;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
 .awards-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    max-width: 1200px;
+    gap: 20px;
+    max-width: 1190px;
     margin: 0 auto;
 }
 
-.award-card {
-    background: white;
-    padding: 30px;
+.awards-container img {
+    width: 100%;
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    min-width: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.clutch-rating {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-}
-
-.clutch-logo {
-    font-weight: bold;
-    font-size: 2rem;
-}
-
-.rating {
-    color: #333;
-    font-weight: 500;
-}
-
-.stars {
-    color: #ff4500;
-}
-
-.google-stars {
-    color: #ffd700;
-}
-
-.upwork-badge {
-    color: #14a800;
-    font-weight: bold;
-}
-
-.top-badge {
-    color: #0056b3;
-    font-weight: bold;
 }
 
 .newsletter-container {
-    background-color: #0a192f;
-    padding: 24px;
+    background-color: var(--Primary---950, rgba(7, 43, 74, 1));
+    padding: 35px;
     border-radius: 8px;
     font-family: system-ui, -apple-system, sans-serif;
 }
@@ -273,7 +263,8 @@
 
 .contact-email {
     color: #0284c7;
-    text-decoration: none;
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 .response-time {
@@ -298,7 +289,7 @@
 .form-section {
     flex: 2;
     min-width: 300px;
-    background-color: #f8fafc;
+    background-color: var(--Primary---50, rgba(240, 248, 255, 1));
     padding: 20px;
     border-radius: 12px;
 }
